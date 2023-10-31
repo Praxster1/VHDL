@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../A2-PRNG"
+		},
+		{
+			"path": "../../A1-Siebensegment"
+		}
+	],
+	"settings": {}
+}
