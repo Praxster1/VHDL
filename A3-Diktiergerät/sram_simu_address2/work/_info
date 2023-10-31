@@ -1,0 +1,109 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\dirk\Documents\FH\Lehre\VHDL\Praktikum\audiocodec\vhdl_data\addr_path\sram_simu_address_lsg2
+Esram_controler_address
+w1541067574
+Z0 DPx4 work 19 sram_controler_pack 0 22 Uhn1c3<mXSLO9@<P<c^Hg1
+Z1 DPx11 project_lib 8 fsm_pack 0 22 hAfWaAaj[fh97P8J[M86Y2
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dirk\Documents\FH\Lehre\VHDL\Praktikum\audiocodec\vhdl_data\addr_path\sram_simu_address2
+8C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address.vhd
+FC:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address.vhd
+l0
+L30
+VPIZNi;lmgdQoi`:ScIlC:2
+Z6 OV;C;10.1e;51
+32
+Z7 o-work work -2002 -explicit -O0
+Z8 tExplicit 1
+!s100 ^jDXI@eJEZC:U4:JT6C;G0
+!i10b 1
+!s108 1541067665.879000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address.vhd|
+!s107 C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address.vhd|
+Esram_controler_address_tb_hide
+Z9 w1541063372
+R2
+Z10 DPx4 work 19 sram_controler_pack 0 22 Uhn1c3<mXSLO9@<P<c^Hg1
+R3
+R4
+R1
+R5
+Z11 8C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address_tb_hide.vhd
+Z12 FC:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address_tb_hide.vhd
+l0
+L30
+V`U?K;2@V:X^GMDdmmm_[93
+!s100 RQTHH0eKj]g9VM91f59Am1
+R6
+32
+!i10b 1
+Z13 !s108 1541067666.045000
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address_tb_hide.vhd|
+Z15 !s107 C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_address_tb_hide.vhd|
+R7
+R8
+Atb_hide
+R2
+R10
+R3
+R4
+R1
+DEx4 work 30 sram_controler_address_tb_hide 0 22 `U?K;2@V:X^GMDdmmm_[93
+l48
+L35
+VcMVFzS9[gTXBGUbDaVGZ00
+!s100 P3Re`QJ4I1Y?Z0eYEGIcU0
+R6
+32
+!i10b 1
+R13
+R14
+R15
+R7
+R8
+Psram_controler_pack
+R2
+R3
+R4
+R1
+Z16 w1541063638
+R5
+Z17 8C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_pack.vhd
+Z18 FC:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_pack.vhd
+l0
+L28
+VUhn1c3<mXSLO9@<P<c^Hg1
+R6
+32
+b1
+Z19 !s108 1541067665.656000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_pack.vhd|
+Z21 !s107 C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address2/sram_controler_pack.vhd|
+R7
+R8
+!s100 VTPQQNe^0gfELXb:eK_A42
+!i10b 1
+Bbody
+R10
+R2
+R3
+R4
+R1
+l0
+L78
+VeCBk59h2m:YAd1ZZnm8=;1
+R6
+32
+R19
+R20
+R21
+R7
+R8
+nbody
+!s100 7dRTIS;U8A_i8>>G^Q4zj0
+!i10b 1

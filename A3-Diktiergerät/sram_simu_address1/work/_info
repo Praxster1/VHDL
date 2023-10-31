@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\dirk\Documents\FH\Lehre\VHDL\Praktikum\audiocodec\vhdl_data\addr_path\sram_simu_address
+Esram_controler_address
+w1541064573
+Z0 DPx4 work 19 sram_controler_pack 0 22 l^A3bePBl[6OgFRSN:1?d1
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\dirk\Documents\FH\Lehre\VHDL\Praktikum\audiocodec\vhdl_data\addr_path\sram_simu_address1
+8C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_address.vhd
+FC:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_address.vhd
+l0
+L28
+Vl4cm?X1PD]=CH1d7]YCQW3
+!s100 jMOe]@jAf>MG3JY7eL3Xj3
+Z5 OV;C;10.1e;51
+32
+!i10b 1
+!s108 1541067745.137000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_address.vhd|
+!s107 C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_address.vhd|
+Z6 o-work work -2002 -explicit -O0
+Z7 tExplicit 1
+Psram_controler_pack
+R1
+R2
+R3
+Z8 w1541064155
+R4
+Z9 8C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_pack.vhd
+Z10 FC:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_pack.vhd
+l0
+L26
+Vl^A3bePBl[6OgFRSN:1?d1
+R5
+32
+b1
+Z11 !s108 1541067744.961000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_pack.vhd|
+Z13 !s107 C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_pack.vhd|
+R6
+R7
+!s100 JOAlef=^2V^BmQH`jCIoO3
+!i10b 1
+Bbody
+Z14 DPx4 work 19 sram_controler_pack 0 22 l^A3bePBl[6OgFRSN:1?d1
+R1
+R2
+R3
+l0
+L60
+VeCBk59h2m:YAd1ZZnm8=;1
+R5
+32
+R11
+R12
+R13
+R6
+R7
+nbody
+!s100 Ph0hLCaeB9Yi5X3Ielh7O3
+!i10b 1
