@@ -1,0 +1,5 @@
+# Compile of prng_pack.vhd was successful.
+# Compile of prng_core.vhd was successful with warnings.
+# Compile of prng.vhd was successful with warnings.
+# Compile of prng_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.

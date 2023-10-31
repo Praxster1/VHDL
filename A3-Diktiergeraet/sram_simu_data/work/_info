@@ -1,0 +1,124 @@
+m255
+K3
+13
+cModel Technology
+dE:\Quartus
+Esram_controler_data
+Z0 w1698752948
+Z1 DPx4 work 19 sram_controler_pack 0 22 59ahDGhWi^W?1^P[:5GS:3
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Projects\VHDL\A3-Diktiergeraet\sram_simu_data
+Z6 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data.vhd
+Z7 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data.vhd
+l0
+L7
+V6bLzaKH;cUQaJaNg=oUYf1
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1698752953.333000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data.vhd|
+Z11 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 SE75^?<6]U1UKacJWhShC3
+!i10b 1
+Artl
+R1
+R2
+R3
+R4
+DEx4 work 19 sram_controler_data 0 22 6bLzaKH;cUQaJaNg=oUYf1
+l23
+L21
+V]1^398R8ihPaL6Z5UVd@K2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 TVj3ZH=2li;X;Dnknj[Xb0
+!i10b 1
+Esram_controler_data_tb
+Z14 w1698751326
+R1
+Z15 DPx17 std_developerskit 9 std_iopak 0 22 6HXb]gHTk_K7=l7_K:zRF0
+R2
+R3
+R4
+R5
+Z16 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data_tb.vhd
+Z17 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data_tb.vhd
+l0
+L31
+VEiL<MiU5E:TMa2I4MaHAW0
+!s100 8nd`M:3JPgW6dnV>NS=2d2
+R8
+32
+!i10b 1
+Z18 !s108 1698752953.447000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data_tb.vhd|
+Z20 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_data_tb.vhd|
+R12
+R13
+Atb1
+R1
+R15
+R2
+R3
+R4
+Z21 DEx4 work 22 sram_controler_data_tb 0 22 EiL<MiU5E:TMa2I4MaHAW0
+l58
+L36
+Z22 VJ]T:9:E9DE0b[2ZkIJf=m2
+Z23 !s100 4Ki1Pj1P^bgO5H;eI[YMJ3
+R8
+32
+!i10b 1
+R18
+R19
+R20
+R12
+R13
+Psram_controler_pack
+R2
+R3
+R4
+R14
+R5
+Z24 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_pack.vhd
+Z25 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_pack.vhd
+l0
+L4
+V59ahDGhWi^W?1^P[:5GS:3
+R8
+32
+b1
+Z26 !s108 1698752953.282000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_pack.vhd|
+Z28 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_data/sram_controler_pack.vhd|
+R12
+R13
+!s100 mE[beBCRdcAA>YTGE15203
+!i10b 1
+Bbody
+R1
+R2
+R3
+R4
+l0
+L26
+VeCBk59h2m:YAd1ZZnm8=;1
+R8
+32
+R26
+R27
+R28
+R12
+R13
+nbody
+!s100 >UCdaj>>K4dUeM^j4:k6Z1
+!i10b 1
