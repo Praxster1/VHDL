@@ -1,0 +1,17 @@
+# 0 compiles, 3 failed with no errors.
+# Compile of sram_controler_data.vhd failed with 3 errors.
+# Compile of sram_controler_data_tb.vhd failed with 3 errors.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 2 failed with 6 errors.
+# Compile of sram_controler_data.vhd was successful.
+# Compile of sram_controler_data_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of sram_controler_data.vhd was successful.
+# Compile of sram_controler_data_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of sram_controler_data.vhd was successful.
+# Compile of sram_controler_data_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 0 failed with no errors.

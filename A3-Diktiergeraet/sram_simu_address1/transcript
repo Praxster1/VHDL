@@ -1,7 +1,69 @@
-# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-# OpenFile C:/Users/dirk/Documents/FH/Lehre/VHDL/Praktikum/audiocodec/vhdl_data/addr_path/sram_simu_address1/sram_controler_address.mpf 
-# Loading project sram_controler_address
+# Compile of sram_controler_address.vhd failed with 3 errors.
+# Compile of sram_controler_address_tb.vhd failed with 3 errors.
 # Compile of sram_controler_pack.vhd was successful.
-# Compile of sram_controler_address.vhd was successful.
-# Compile of sram_controler_address_tb.vhd failed with 1 errors.
-# 3 compiles, 1 failed with 1 error. 
+# 3 compiles, 2 failed with 6 errors.
+# Compile of sram_controler_address.vhd failed with 6 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 6 errors.
+# Compile of sram_controler_address.vhd failed with 5 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 5 errors.
+# Compile of sram_controler_address.vhd failed with 6 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 6 errors.
+# Compile of sram_controler_address.vhd failed with 3 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 3 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 1 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Load canceled
+# Compile of sram_controler_address.vhd failed with 3 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 3 errors.
+# Compile of sram_controler_address.vhd failed with 2 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sram_controler_address.vhd failed with 1 errors.
+# Compile of sram_controler_address_tb.vhd was successful.
+# Compile of sram_controler_pack.vhd was successful.
+# 3 compiles, 1 failed with 1 error.

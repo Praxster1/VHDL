@@ -18,36 +18,39 @@ end sram_controler_data;
 
 architecture rtl of sram_controler_data is
   signal data_reg : std_ulogic_vector(23 downto 0);
+begin -- architecture rtl
 
-begin
+  srctr_data_o <= data_reg;
 
-  datareg_p : process (state_i)
-  begin
+  datareg_p : process (clk_i, reset_n_i) is
+  begin -- process datareg_p
     if reset_n_i = '0' then
       data_reg <= (others => '0');
-    elsif rising_edge(clk_i) then
+    elsif (rising_edge(clk_i)) then
       if fsm_we_i = '1' and (state_i = FSM_IDLE or state_i = FSM_WRITE_MEM_33 or state_i = FSM_READ_MEM_33) then
-        mem_data_b(7 downto 0) <= std_logic_vector(data_reg(7 downto 0));
-        mem_data_b(15 downto 8) <= std_logic_vector(data_reg(7 downto 0));
+        data_reg <= audio_data_i;
+      elsif ((state_i = FSM_WRITE_MEM_13) or (state_i = FSM_WRITE_MEM_23)) then
+        data_reg(15 downto 0) <= data_reg(23 downto 8);
 
-        -- 3 clock ticks later
-        data_reg <= std_ulogic_vector(shift_right(unsigned(audio_data_i), 8));
-        mem_data_b(7 downto 0) <= std_logic_vector(data_reg(7 downto 0));
-        mem_data_b(15 downto 8) <= std_logic_vector(data_reg(7 downto 0));
-
-        -- 3 clock ticks later
-        data_reg <= std_ulogic_vector(shift_right(unsigned(audio_data_i), 8));
-        mem_data_b(7 downto 0) <= std_logic_vector(data_reg(7 downto 0));
-        mem_data_b(15 downto 8) <= std_logic_vector(data_reg(7 downto 0));
-
-
+      elsif (state_i = FSM_READ_MEM_12 or state_i = FSM_READ_MEM_22 or state_i = FSM_READ_MEM_32) then
+        if (addr_reg0_i = '1') then
+          data_reg(23 downto 16) <= std_ulogic_vector(mem_data_b(15 downto 8));
+          data_reg(15 downto 0) <= data_reg(23 downto 8);
+        else
+          data_reg(23 downto 16) <= std_ulogic_vector(mem_data_b(7 downto 0));
+          data_reg(15 downto 0) <= data_reg(23 downto 8);
+        end if;
       end if;
     end if;
   end process;
 
-  data_b_p : process (state_i)
-  begin
-
-  end process;
-
-end architecture;
+  data_b_p : process (state_i, data_reg) is
+  begin -- process data_b_p
+    if (state_i >= FSM_WRITE_MEM_11 and state_i <= FSM_READ_MEM_33) then -- (state_i = FSM_WRITE_MEM_11) or (state_i = FSM_WRITE_MEM_12) or (state_i = FSM_WRITE_MEM_13) or (state_i = FSM_WRITE_MEM_21) or (state_i = FSM_WRITE_MEM_22) or (state_i = FSM_WRITE_MEM_23) or (state_i = FSM_WRITE_MEM_31) or (state_i = FSM_WRITE_MEM_32) or (state_i = FSM_WRITE_MEM_31)) then
+      mem_data_b(15 downto 8) <= std_logic_vector(data_reg(7 downto 0));
+      mem_data_b(7 downto 0) <= std_logic_vector(data_reg(7 downto 0));
+    else
+      mem_data_b <= (others => 'Z');
+    end if;
+  end process data_b_p;
+end architecture rtl;
