@@ -37,44 +37,130 @@ end entity sram_controler_address_tb;
 architecture tb of sram_controler_address_tb is
 
   -- component ports
-  signal clk_i                  : std_ulogic;
-  signal reset_n_i              : std_ulogic;
-  signal fsm_we_i               : std_ulogic;
-  signal fsm_re_i               : std_ulogic;
-  signal fsm_start_addr_i       : std_ulogic_vector(18 downto 0);
-  signal state_i                : FSM_T;
+  signal clk_i : std_ulogic := '1';
+  signal reset_n_i : std_ulogic := '0';
+  signal fsm_we_i : std_ulogic;
+  signal fsm_re_i : std_ulogic;
+  signal fsm_start_addr_i : std_ulogic_vector(18 downto 0);
+  signal state_i : FSM_T;
   signal srctr_end_addr_plus1_o : std_ulogic_vector(18 downto 0);
-  signal srctr_addr_reg_o       : std_ulogic_vector(18 downto 0);
+  signal srctr_addr_reg_o : std_ulogic_vector(18 downto 0);
 
   -- clock
-  signal Clk : std_logic := '1';
+  signal stop_sim : boolean := false; -- to stop clock-signal at end of simulation to terminate simulation automatically
 
-begin  -- architecture tb
+begin -- architecture tb
 
   -- component instantiation
-  DUT: entity work.sram_controler_address
-    port map (
-      clk_i                  => clk_i,
-      reset_n_i              => reset_n_i,
-      fsm_we_i               => fsm_we_i,
-      fsm_re_i               => fsm_re_i,
-      fsm_start_addr_i       => fsm_start_addr_i,
-      state_i                => state_i,
+  DUT : entity work.sram_controler_address
+    port map(
+      clk_i => clk_i,
+      reset_n_i => reset_n_i,
+      fsm_we_i => fsm_we_i,
+      fsm_re_i => fsm_re_i,
+      fsm_start_addr_i => fsm_start_addr_i,
+      state_i => state_i,
       srctr_end_addr_plus1_o => srctr_end_addr_plus1_o,
-      srctr_addr_reg_o       => srctr_addr_reg_o);
+      srctr_addr_reg_o => srctr_addr_reg_o);
 
   -- clock generation
-  Clk <= not Clk after 10 ns;
+  -- purpose: generate clock signal
+  -- type   : combinational
+  -- inputs : 
+  -- outputs: clk
+  clk_gen_p : process is
+  begin -- process clk_gen_p
+    wait for 10 ns;
+    clk_i <= not clk_i;
+    if stop_sim then
+      wait;
+    end if;
+  end process clk_gen_p;
 
+  -- reset generation
+  reset_p : process
+  begin -- process reset_p
+    wait;
+  end process reset_p;
   -- waveform generation
-  WaveGen_Proc: process
+  WaveGen_Proc : process
+    procedure read(constant start_adress : in std_ulogic_vector(18 downto 0)) is
+    begin
+      state_i <= FSM_IDLE;
+      fsm_re_i <= '1';
+      fsm_we_i <= '0';
+      fsm_start_addr_i <= start_adress;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_11;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_12;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_13;
+      --assert srctr_end_addr_plus1_o = "0000000000000000000";
+      --  report "The expression is false";
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_21;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_22;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_23;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_31;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_32;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_READ_MEM_33;
+      assert srctr_addr_reg_o = start_adress;
+        report "The expression is false";
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_IDLE;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_11;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_12;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_13;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_21;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_22;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_23;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_31;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_32;
+      wait until rising_edge(clk_i);
+
+      state_i <= FSM_WRITE_MEM_33;
+      wait until rising_edge(clk_i);
+    end procedure;
   begin
     -- insert signal assignments here
+    read("1111111111111111111");
 
-    wait until Clk = '1';
+    assert false report "END OF SIMULATION REACHED - this is no error" severity note;
+    stop_sim <= TRUE;
+    wait;
   end process WaveGen_Proc;
-
-  
 
 end architecture tb;
 

@@ -47,8 +47,9 @@ begin
     if reset_n_i = '1' then
       addr_reg <= (others => '1');
     elsif rising_edge(clk_i) then
+
       if (state_i = FSM_WRITE_MEM_33 or state_i = FSM_READ_MEM_33 or state_i = FSM_IDLE) and (fsm_re_i = '1' or fsm_we_i = '1') then
-        addr_reg <= fsm_start_addr_i;
+        srctr_addr_reg_o <= fsm_start_addr_i;
       elsif (state_i = FSM_WRITE_MEM_13 or state_i = FSM_WRITE_MEM_23 or state_i = FSM_READ_MEM_13 or state_i = FSM_READ_MEM_23) then
         addr_reg <= addr_reg_plus1;
       end if;
@@ -58,8 +59,7 @@ begin
   adder_p : process (addr_reg)
   begin
     addr_reg_plus1 <= addr_reg + "1";
+
   end process adder_p;
 
-  srctr_end_addr_plus1_o <= addr_reg_plus1; 
-  srctr_addr_reg_o <= addr_reg;
 end architecture hehe;
