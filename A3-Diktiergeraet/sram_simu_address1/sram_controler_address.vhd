@@ -38,7 +38,6 @@ end sram_controler_address;
 architecture hehe of sram_controler_address is
   signal addr_reg : std_ulogic_vector(18 downto 0);
   signal addr_reg_plus1 : std_ulogic_vector(18 downto 0);
-  --constant ONE : std_ulogic_vector(0 downto 0) := std_ulogic_vector(std_logic_vector(unsigned('1')());
 begin
 
 

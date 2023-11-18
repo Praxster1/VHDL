@@ -1,69 +1,8 @@
-# Compile of sram_controler_address.vhd failed with 3 errors.
-# Compile of sram_controler_address_tb.vhd failed with 3 errors.
 # Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 2 failed with 6 errors.
-# Compile of sram_controler_address.vhd failed with 6 errors.
+# Compile of sram_controler_address.vhd was successful.
 # Compile of sram_controler_address_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
 # Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 6 errors.
-# Compile of sram_controler_address.vhd failed with 5 errors.
+# Compile of sram_controler_address.vhd was successful.
 # Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 5 errors.
-# Compile of sram_controler_address.vhd failed with 6 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 6 errors.
-# Compile of sram_controler_address.vhd failed with 3 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 3 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 1 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 1 error.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Load canceled
-# Compile of sram_controler_address.vhd failed with 3 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 3 errors.
-# Compile of sram_controler_address.vhd failed with 2 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 2 errors.
-# Compile of sram_controler_address.vhd failed with 1 errors.
-# Compile of sram_controler_address_tb.vhd was successful.
-# Compile of sram_controler_pack.vhd was successful.
-# 3 compiles, 1 failed with 1 error.
+# 3 compiles, 0 failed with no errors.
