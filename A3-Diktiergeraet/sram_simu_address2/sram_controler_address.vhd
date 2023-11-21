@@ -22,21 +22,47 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.numeric_std.all;
-library project_lib;
-use project_lib.fsm_pack.all;
 use work.sram_controler_pack.all;
 
+library project_lib;  
+use project_lib.fsm_pack.all;
 
 entity sram_controler_address is
+  
 
   port (
-    clk_i                  : in  std_ulogic;
-    reset_n_i              : in  std_ulogic;
-    fsm_we_i               : in  std_ulogic;
-    fsm_re_i               : in  std_ulogic;
-    fsm_start_addr_i       : in  std_ulogic_vector(18 downto 0);
-    state_i                : in  FSM_T;
+    clk_i : in std_ulogic;
+    reset_n_i : in std_ulogic;
+    fsm_we_i : in std_ulogic;
+    fsm_re_i : in std_ulogic;
+    fsm_start_addr_i : in std_ulogic_vector(18 downto 0);
+    state_i : in FSM_T;
     srctr_end_addr_plus1_o : out std_ulogic_vector(18 downto 0);
-    srctr_addr_reg_o       : out std_ulogic_vector(18 downto 0));
+    srctr_addr_reg_o : out std_ulogic_vector(18 downto 0));
 end sram_controler_address;
+architecture hehe of sram_controler_address is
+  signal addr_reg : std_ulogic_vector(18 downto 0);
+  signal addr_reg_plus1 : std_ulogic_vector(18 downto 0);
+begin
 
+  addr_p : process (clk_i, reset_n_i)
+  begin
+    if reset_n_i = '0' then
+      addr_reg <= (others => '1');
+    elsif rising_edge(clk_i) then
+      if (state_i = FSM_WRITE_MEM_33 or state_i = FSM_READ_MEM_33 or state_i = FSM_IDLE) and (fsm_re_i = '1' or fsm_we_i = '1') then
+        addr_reg <= fsm_start_addr_i;
+      elsif (state_i = FSM_WRITE_MEM_13 or state_i = FSM_WRITE_MEM_23 or state_i = FSM_READ_MEM_13 or state_i = FSM_READ_MEM_23) then
+        addr_reg <= addr_reg_plus1;
+      end if;
+    end if;
+  end process addr_p;
+
+  adder_p : process (addr_reg)
+  begin
+    addr_reg_plus1 <= addr_reg + "1";
+  end process adder_p;
+
+  srctr_end_addr_plus1_o <= addr_reg_plus1; 
+  srctr_addr_reg_o <= addr_reg;
+end architecture hehe;

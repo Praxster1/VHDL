@@ -6,7 +6,7 @@
 -- Author     : Timo Wottka  <timow@twLaptop>
 -- Company    : 
 -- Created    : 2023-11-08
--- Last update: 2023-11-08
+-- Last update: 2023-11-21
 -- Platform   : 
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
@@ -26,6 +26,8 @@ use IEEE.numeric_std.all;
 use std_developerskit.std_iopak.all;
 use work.sram_controler_pack.all;
 
+library project_lib;  
+use project_lib.fsm_pack.all;
 -------------------------------------------------------------------------------
 
 entity sram_controler_address_tb is
@@ -38,7 +40,7 @@ architecture tb of sram_controler_address_tb is
 
   -- component ports
   signal clk_i : std_ulogic := '1';
-  signal reset_n_i : std_ulogic := '0';
+  signal reset_n_i : std_ulogic := '1';
   signal fsm_we_i : std_ulogic;
   signal fsm_re_i : std_ulogic;
   signal fsm_start_addr_i : std_ulogic_vector(18 downto 0);
@@ -48,7 +50,6 @@ architecture tb of sram_controler_address_tb is
 
   -- clock
   signal stop_sim : boolean := false; -- to stop clock-signal at end of simulation to terminate simulation automatically
-
 begin -- architecture tb
 
   -- component instantiation
@@ -84,77 +85,165 @@ begin -- architecture tb
   end process reset_p;
   -- waveform generation
   WaveGen_Proc : process
-    procedure read(constant start_adress : in std_ulogic_vector(18 downto 0)) is
+    procedure read(constant start_adress : in std_ulogic_vector(18 downto 0); constant loopCounter : in unsigned) is
+      variable increment : std_ulogic_vector(18 downto 0) := (others => '0');
+      variable counter : unsigned(18 downto 0) := (others => '0');
     begin
-      fsm_start_addr_i(18 downto 0) <= start_adress(18 downto 0);
-      fsm_re_i <= '0';
-      fsm_we_i <= '1';
+      fsm_start_addr_i <= start_adress;
       wait until rising_edge(clk_i);
       state_i <= FSM_IDLE;
+      fsm_re_i <= '1';
+      fsm_we_i <= '0';
+      while(counter < loopCounter)loop
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_11;
+        fsm_re_i <= '0';
+        fsm_we_i <= '0';
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_12;
+        assert start_adress(18 downto 0) = fsm_start_addr_i(18 downto 0) report "MEM 11 ERROR";
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "start address not equal to srctr_addr_reg_o";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_13;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 12 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_21;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 13 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_22;
+        increment := increment + "1";
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 21 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_23;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 22 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_31;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 23 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_32;
+        increment := increment + "1";
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 31 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_READ_MEM_33;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "MEM 32 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "start address not equal to srctr_end_addr_plus1_o";
+
+        counter := counter + 1;
+
+      end loop;
+
+      fsm_re_i <= '0';
+      fsm_we_i <= '1';
+
       wait until rising_edge(clk_i);
-      assert srctr_addr_reg_o(18 downto 0) = fsm_start_addr_i(18 downto 0) report "INIT WRONG";
-      assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "INIT2 WRONG";
+      state_i <= FSM_IDLE;
 
       wait until rising_edge(clk_i);
       state_i <= FSM_READ_MEM_11;
+      assert start_adress(18 downto 0) = fsm_start_addr_i(18 downto 0) report "READ MEM 11 START ADRESS RESET ERROR";
+      assert fsm_start_addr_i(18 downto 0) = srctr_addr_reg_o(18 downto 0) report "START ADRESS RESET not equal to srctr_addr_reg_o";
+      assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "START ADRESS RESET not equal to srctr_end_addr_plus1_o";
 
       wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_12;
-
+      state_i <= FSM_IDLE; --RESET
       wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_13;
+    end procedure;
 
+    procedure write(constant start_adress : in std_ulogic_vector(18 downto 0); constant loopCounter : in unsigned) is
+      variable increment : std_ulogic_vector(18 downto 0) := (others => '0');
+      variable counter : unsigned(18 downto 0) := (others => '0');
+    begin
+      fsm_start_addr_i <= start_adress;
       wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_21;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_22;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_23;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_31;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_32;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_READ_MEM_33;
-
       state_i <= FSM_IDLE;
+      fsm_re_i <= '1';
+      fsm_we_i <= '0';
+      while(counter < loopCounter)loop
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_11;
+        fsm_re_i <= '0';
+        fsm_we_i <= '0';
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_12;
+        assert start_adress(18 downto 0) = fsm_start_addr_i(18 downto 0) report "WRITE 11 ERROR";
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE start address not equal to srctr_addr_reg_o";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_13;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 12 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_21;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 13 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_22;
+        increment := increment + "1";
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 21 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_23;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 22 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_31;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 23 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_32;
+        increment := increment + "1";
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 31 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        wait until rising_edge(clk_i);
+        state_i <= FSM_WRITE_MEM_33;
+        assert srctr_addr_reg_o(18 downto 0) = (fsm_start_addr_i(18 downto 0) + increment) report "WRITE 32 ERROR";
+        assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE start address not equal to srctr_end_addr_plus1_o";
+
+        counter := counter + 1;
+
+      end loop;
+
+      fsm_re_i <= '0';
+      fsm_we_i <= '1';
+
       wait until rising_edge(clk_i);
+      state_i <= FSM_IDLE;
 
       wait until rising_edge(clk_i);
       state_i <= FSM_WRITE_MEM_11;
+      assert start_adress(18 downto 0) = fsm_start_addr_i(18 downto 0) report "WRITE MEM 11 START ADRESS RESET ERROR";
+      assert fsm_start_addr_i(18 downto 0) = srctr_addr_reg_o(18 downto 0) report "WRITE START ADRESS RESET not equal to srctr_addr_reg_o";
+      assert srctr_end_addr_plus1_o(18 downto 0) = (srctr_addr_reg_o(18 downto 0) + "1") report "WRITE START ADRESS RESET not equal to srctr_end_addr_plus1_o";
 
       wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_12;
-
+      state_i <= FSM_IDLE; --RESET
       wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_13;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_21;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_22;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_23;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_31;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_32;
-
-      wait until rising_edge(clk_i);
-      state_i <= FSM_WRITE_MEM_33;
     end procedure;
   begin
     -- insert signal assignments here
-    read("1111111111111111111");
+    read("1111111111111111111", to_unsigned(8, 4));
+    write("1111111111111111111", to_unsigned(8, 4));
 
     assert false report "END OF SIMULATION REACHED - this is no error" severity note;
     stop_sim <= TRUE;

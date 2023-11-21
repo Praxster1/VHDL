@@ -1,174 +1,152 @@
 m255
 K3
-z0
 13
 cModel Technology
 dC:\Users\dirk\Documents\FH\Lehre\VHDL\Praktikum\audiocodec\vhdl_data\addr_path\sram_simu_address
 !s11e MIXED_VERSIONS
 Esram_controler_address
-Z0 w1700052847
-Z1 DPx4 work 19 sram_controler_pack 0 22 D4?UzEezMTeT@l0WB[3@?0
-Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 64
-Z5 d/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1
-Z6 8/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd
-Z7 F/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd
+Z0 w1700596718
+Z1 DPx4 work 19 sram_controler_pack 0 22 l^A3bePBl[6OgFRSN:1?d1
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Projects\VHDL\A3-Diktiergeraet\sram_simu_address1
+Z6 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd
+Z7 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd
 l0
-Z8 L26 1
-VU4OilWGMeXk@_Cg5K`?2<0
-!s100 oaBf?SYB``@e5ezFhb]dQ3
-Z9 OV;C;2020.1;71
+L26
+Vl4cm?X1PD]=CH1d7]YCQW3
+Z8 OV;C;10.1d;51
 32
-Z10 !s110 1700064945
+Z9 !s108 1700605288.923000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd|
+Z11 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 k0Z>DEY0I7_`BJHdD@DD82
 !i10b 1
-Z11 !s108 1700064944.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd|
-Z13 !s107 /home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address.vhd|
-!i113 1
-Z14 o-work work -2002 -explicit
-Z15 tExplicit 1 CvgOpt 0
 Ahehe
 R1
 R2
 R3
 R4
-Z16 DEx4 work 22 sram_controler_address 0 22 U4OilWGMeXk@_Cg5K`?2<0
-!i122 64
+Z14 DEx4 work 22 sram_controler_address 0 22 l4cm?X1PD]=CH1d7]YCQW3
 l41
-L38 27
-VT?:=P9TYng<[o=Lb90G1]0
-!s100 B7>=hC0ED31EW1k]CTQ7e2
-R9
+L38
+VK66S_Fmo=ge=o8m;W9hgg1
+R8
 32
+R9
 R10
-!i10b 1
 R11
 R12
 R13
-!i113 1
-R14
-R15
+!s100 Of2McJcM];JkNR7VU0ERF0
+!i10b 1
 Esram_controler_address_tb
-Z17 w1700064938
+Z15 w1700604172
 R1
-Z18 DPx17 std_developerskit 9 std_iopak 0 22 TIEH2DXm]ZmCF5gcNZM2b2
+Z16 DPx17 std_developerskit 9 std_iopak 0 22 6HXb]gHTk_K7=l7_K:zRF0
 R2
 R3
 R4
-!i122 65
 R5
-Z19 8/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address_tb.vhd
-Z20 F/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address_tb.vhd
+Z17 8C:\Projects\VHDL\A3-Diktiergeraet\sram_simu_address1\sram_controler_address_tb.vhd
+Z18 FC:\Projects\VHDL\A3-Diktiergeraet\sram_simu_address1\sram_controler_address_tb.vhd
 l0
-L31 1
-Vj=68OM56O[<dk9jUWKZ963
-!s100 lk=66j;DkB9VOK8]JdnnW1
-R9
+L31
+VgU;T`cOIZcPfV7>b`WY0i3
+R8
 32
-R10
+Z19 !s108 1700605288.978000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Projects\VHDL\A3-Diktiergeraet\sram_simu_address1\sram_controler_address_tb.vhd|
+Z21 !s107 C:\Projects\VHDL\A3-Diktiergeraet\sram_simu_address1\sram_controler_address_tb.vhd|
+R12
+R13
+!s100 Q_CDYza`DJM3eAS?l^5861
 !i10b 1
-Z21 !s108 1700064945.000000
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address_tb.vhd|
-Z23 !s107 /home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_address_tb.vhd|
-!i113 1
-R14
-R15
 Atb
-R16
-R1
-R18
-R2
-R3
-R4
-Z24 DEx4 work 25 sram_controler_address_tb 0 22 j=68OM56O[<dk9jUWKZ963
-!i122 65
-l52
-L37 128
-V]bll6In1@:SjnEaHV];na0
-!s100 ?>mfZkcm0Xc0kHJVK5cS50
-R9
-32
-R10
-!i10b 1
-R21
-R22
-R23
-!i113 1
 R14
-R15
-Csram_controler_address_tb_tb_cfg
-esram_controler_address_tb
-atb
-R16
-DAx4 work 25 sram_controler_address_tb 2 tb 22 ]bll6In1@:SjnEaHV];na0
 R1
-R18
+R16
 R2
 R3
 R4
-R24
-!i122 65
-R17
-R5
+Z22 DEx4 work 25 sram_controler_address_tb 0 22 gU;T`cOIZcPfV7>b`WY0i3
+l51
+L37
+V4<80>L_Yd_9[BACWLHQ9W2
+!s100 BKIkn485JzA@F6?ndeFZR1
+R8
+32
 R19
 R20
-l0
-L168 1
-VnkMnf5_KgSf]dT4Bc4kc^1
-!s100 N2^4I3^WNj6hBPRaIz8^V2
-R9
-32
-R10
-!i10b 0
 R21
-R22
-R23
-!i113 1
+R12
+R13
+!i10b 1
+Csram_controler_address_tb_tb_cfg
+atb
+esram_controler_address_tb
 R14
+DAx4 work 25 sram_controler_address_tb 2 tb 22 4<80>L_Yd_9[BACWLHQ9W2
+R1
+R16
+R2
+R3
+R4
+R22
 R15
+R5
+R17
+R18
+l0
+L255
+VUP;o_>B5l8LWe?mzeTWhN3
+R8
+32
+R19
+R20
+R21
+R12
+R13
+!s100 EMj26Q3;jB]B4aAVeg0]i2
+!i10b 0
 Psram_controler_pack
 R2
 R3
 R4
-!i122 63
-Z25 w1699420182
+Z23 w1698751326
 R5
-Z26 8/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd
-Z27 F/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd
+Z24 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd
+Z25 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd
 l0
+L26
+Vl^A3bePBl[6OgFRSN:1?d1
+!s100 JOAlef=^2V^BmQH`jCIoO3
 R8
-VD4?UzEezMTeT@l0WB[3@?0
-!s100 zj5M`_0cb`<RPBzh>HGh?0
-R9
 32
 b1
-Z28 !s110 1700064944
 !i10b 1
-R11
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd|
-Z30 !s107 /home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd|
-!i113 1
-R14
-R15
+Z26 !s108 1700605289.112000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd|
+Z28 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address1/sram_controler_pack.vhd|
+R12
+R13
 Bbody
 R1
 R2
 R3
 R4
-!i122 63
 l0
-L60 1
-V0SV?ABc0eOAc0X1fKL4L23
-!s100 E99DSlYFS`DoBm4jGMg9Y2
-R9
+L60
+Z29 VeCBk59h2m:YAd1ZZnm8=;1
+Z30 !s100 Ph0hLCaeB9Yi5X3Ielh7O3
+R8
 32
-R28
 !i10b 1
-R11
-R29
-R30
-!i113 1
-R14
-R15
+R26
+R27
+R28
+R12
+R13

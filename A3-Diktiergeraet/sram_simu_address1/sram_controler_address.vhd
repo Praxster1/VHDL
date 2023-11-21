@@ -40,10 +40,9 @@ architecture hehe of sram_controler_address is
   signal addr_reg_plus1 : std_ulogic_vector(18 downto 0);
 begin
 
-
   addr_p : process (clk_i, reset_n_i)
   begin
-    if reset_n_i = '1' then
+    if reset_n_i = '0' then
       addr_reg <= (others => '1');
     elsif rising_edge(clk_i) then
       if (state_i = FSM_WRITE_MEM_33 or state_i = FSM_READ_MEM_33 or state_i = FSM_IDLE) and (fsm_re_i = '1' or fsm_we_i = '1') then
