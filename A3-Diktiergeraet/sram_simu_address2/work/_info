@@ -1,128 +1,129 @@
 m255
 K3
+z0
+!s11e MIXED_VERSIONS
 13
 cModel Technology
 dC:\Users\dirk\Documents\FH\Lehre\VHDL\Praktikum\audiocodec\vhdl_data\addr_path\sram_simu_address_lsg2
 Esram_controler_address
-Z0 w1700605504
+Z0 w1700658446
 Z1 DPx11 project_lib 8 fsm_pack 0 22 hAfWaAaj[fh97P8J[M86Y2
-Z2 DPx4 work 19 sram_controler_pack 0 22 Uhn1c3<mXSLO9@<P<c^Hg1
-Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 dC:\Projects\VHDL\A3-Diktiergeraet\sram_simu_address2
-Z7 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd
-Z8 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd
+Z2 DPx4 work 19 sram_controler_pack 0 22 i?SH_h^VA@@2S?VG[18[81
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+Z6 d/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2
+Z7 8/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd
+Z8 F/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd
 l0
-L30
-VbYXYh]n;]9g?@b5^6hSzD1
-Z9 OV;C;10.1d;51
+L30 1
+VlSRSUM[lfNGEU_@bDnoGC3
+!s100 oB75F^hKkbf7D<oe[g5;=3
+Z9 OV;C;2020.1;71
 32
-Z10 !s108 1700605510.591000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd|
-Z12 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd|
-Z13 o-work work -2002 -explicit -O0
-Z14 tExplicit 1
-!s100 nc5ZnT]PYPI]z4G8H0TZo3
+Z10 !s110 1700659439
 !i10b 1
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
 Ahehe
 R1
 R2
 R3
 R4
 R5
-DEx4 work 22 sram_controler_address 0 22 bYXYh]n;]9g?@b5^6hSzD1
+DEx4 work 22 sram_controler_address 0 22 lSRSUM[lfNGEU_@bDnoGC3
+!i122 13
 l46
-L43
-VK66S_Fmo=ge=o8m;W9hgg1
+L43 26
+VzagGA[mYR=0z<@a<Xo^Ol0
+!s100 ZUoAPHfN4TXba5A6]LAa^0
 R9
 32
 R10
+!i10b 1
+!i113 1
 R11
 R12
-R13
-R14
-!s100 X]fd0]:7;[W`gNYEfajFC0
-!i10b 1
 Esram_controler_address_tb_hide
-Z15 w1700605042
+Z13 w1700659070
 R3
+R1
 R2
 R4
 R5
-R1
+!i122 14
 R6
-Z16 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd
-Z17 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd
+Z14 8/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd
+Z15 F/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd
 l0
-L30
-V`U?K;2@V:X^GMDdmmm_[93
+L31 1
+V0Df;oQd;n;[:]AkK<]M`C2
+!s100 >27jk4Z[B79Qz8iDQP8W41
 R9
 32
-Z18 !s108 1700605510.645000
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd|
-Z20 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd|
-R13
-R14
-!s100 RQTHH0eKj]g9VM91f59Am1
+R10
 !i10b 1
+!i113 1
+R11
+R12
 Atb_hide
 R3
+R1
 R2
 R4
 R5
-R1
-DEx4 work 30 sram_controler_address_tb_hide 0 22 `U?K;2@V:X^GMDdmmm_[93
-l48
-L35
-VcMVFzS9[gTXBGUbDaVGZ00
-!s100 P3Re`QJ4I1Y?Z0eYEGIcU0
+DEx4 work 30 sram_controler_address_tb_hide 0 22 0Df;oQd;n;[:]AkK<]M`C2
+!i122 14
+l49
+L36 39
+V6]zVJY^nP:n6S=V9P=REg1
+!s100 m2=dUef6WR129[Ul11AkN2
 R9
 32
-R18
-R19
-R20
-R13
-R14
+R10
 !i10b 1
+!i113 1
+R11
+R12
 Psram_controler_pack
 R3
 R4
 R5
 R1
-R15
+!i122 15
+Z16 w1699420182
 R6
-Z21 8C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd
-Z22 FC:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd
+Z17 8/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd
+Z18 F/home/timow/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd
 l0
-L28
-VUhn1c3<mXSLO9@<P<c^Hg1
-!s100 VTPQQNe^0gfELXb:eK_A42
+L28 1
+Vi?SH_h^VA@@2S?VG[18[81
+!s100 8n2?>5akkU?24zAF9jnUZ0
 R9
 32
 b1
+R10
 !i10b 1
-Z23 !s108 1700605510.779000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd|
-Z25 !s107 C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd|
-R13
-R14
+!i113 1
+R11
+R12
 Bbody
 R2
 R3
 R4
 R5
 R1
+!i122 15
 l0
-L78
-Z26 VeCBk59h2m:YAd1ZZnm8=;1
-Z27 !s100 7dRTIS;U8A_i8>>G^Q4zj0
+Z19 L78 1
+Z20 V22laoU=`Ub^@WLPBdQ]ka0
+Z21 !s100 QDE8A>i;4f4co^0P?OYJd0
 R9
 32
+R10
 !i10b 1
-R23
-R24
-R25
-R13
-R14
-nbody
+!i113 1
+R11
+R12
