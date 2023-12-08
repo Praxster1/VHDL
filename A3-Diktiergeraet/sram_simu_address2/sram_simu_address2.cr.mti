@@ -1,1 +1,38 @@
+C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_pack.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package fsm_pack
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package sram_controler_pack
+-- Compiling package body sram_controler_pack
+-- Loading package sram_controler_pack
 
+} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address_tb_hide.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package fsm_pack
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package sram_controler_pack
+-- Compiling entity sram_controler_address_tb_hide
+-- Compiling architecture tb_hide of sram_controler_address_tb_hide
+
+} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd {0 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fsm_pack
+-- Loading package sram_controler_pack
+-- Compiling entity sram_controler_address
+-- Compiling architecture hehe of sram_controler_address
+** Error: (vcom-1935) Unable to move temporary file C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/work/_temp/vcomgwts0x to C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/work/sram_controler_address/hehe.dat.
+
+File exists. (errno = EEXIST)
+** Error: C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_address2/sram_controler_address.vhd(68): VHDL Compiler exiting
+
+} {11.0 12.0 14.0 15.0} {}}
