@@ -20,10 +20,11 @@
 -------------------------------------------------------------------------------
 
 library ieee;
-library project_lib;
-use project_lib.fsm_pack.all;
 use ieee.std_logic_1164.all;
 use work.sram_controler_pack.all;
+
+library project_lib;
+use project_lib.fsm_pack.all;
 
 -------------------------------------------------------------------------------
 
