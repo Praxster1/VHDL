@@ -1,34 +1,4 @@
-C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_data.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_data.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package sram_controler_pack
--- Compiling entity sram_controler_data
--- Compiling architecture rtl of sram_controler_data
-
-} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_address.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_address.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package sram_controler_pack
--- Compiling entity sram_controler_address
--- Compiling architecture hehe of sram_controler_address
-
-} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_textio
--- Loading package NUMERIC_STD
--- Compiling entity sram
--- Compiling architecture behav_for_sim of sram
-
-} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_tb.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_tb.vhd
+C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_tb.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -45,6 +15,36 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_textio
 -- Loading entity sram
 
+} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Compiling entity sram
+-- Compiling architecture behav_for_sim of sram
+
+} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_address.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_address.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package sram_controler_pack
+-- Compiling entity sram_controler_address
+-- Compiling architecture hehe of sram_controler_address
+
+} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_data.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_data.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package sram_controler_pack
+-- Compiling entity sram_controler_data
+-- Compiling architecture rtl of sram_controler_data
+
 } {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_pack.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler_pack.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -55,7 +55,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling package body sram_controler_pack
 -- Loading package sram_controler_pack
 
-} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler.vhd {1 {vcom -work work -2002 -explicit C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler.vhd
+} {} {}} C:/Projects/VHDL/A3-Diktiergeraet/sram_simu_complete/sram_controler.vhd {1 {vcom -work work -2002 -explicit {C:\Projects\VHDL\A3-Diktiergeraet\sram_simu_complete\sram_controler.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -63,6 +63,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Loading package sram_controler_pack
 -- Compiling entity sram_controler
--- Compiling architecture rtl of sram_controler
+-- Compiling architecture sram_ctrl of sram_controler
 
 } {} {}}

@@ -52,8 +52,8 @@ architecture tb1 of sram_controler_tb is
       srctr_lb_n_o : out std_ulogic;
       srctr_ub_n_o : out std_ulogic;
       srctr_addr_reg_o : out std_ulogic_vector(18 downto 0);
-      mem_data_b : inout std_logic_vector(15 downto 0);
-      state_o : out FSM_T
+      mem_data_b : inout std_logic_vector(15 downto 0)
+      --state_o : out FSM_T
     );
   end component;
 
@@ -117,8 +117,8 @@ begin -- tb1
     srctr_lb_n_o => srctr_lb_n,
     srctr_ub_n_o => srctr_ub_n,
     srctr_addr_reg_o => srctr_addr_reg,
-    mem_data_b => mem_data,
-    state_o => state
+    mem_data_b => mem_data
+    --state_o => state
   );
 
 
