@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+package klausur_pack is
+  type fsm_state is (FSM_IDLE, FSM_IDLE_LOW, FSM_IDLE_HIGH, FSM_LOW, FSM_HIGH);
+
+  function "+" (
+    constant l, r : std_ulogic_vector)
+    return std_ulogic_vector;
+end package klausur_pack;
+
+package body klausur_pack is
+
+  function "+" (
+    constant l, r : std_ulogic_vector)
+    return std_ulogic_vector is
+    variable result : std_ulogic_vector(l'high downto l'low);
+  begin	 -- +
+    result := std_ulogic_vector(std_logic_vector(unsigned(l)+unsigned(r)));
+    return result;
+  end "+";
+
+
+end package body klausur_pack;
